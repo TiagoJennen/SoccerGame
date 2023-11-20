@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoccerGimma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="voetballijnen.png" class="field-image">
+        <div class="player ja1">14</div>
+        <div class="player ja2">13</div>
+        <div class="player ja3">12</div>
+        
+        <div class="player forward1">9</div>
+        <div class="player forward2">10</div>
+        <div class="player forward3">11</div>
+
+        <div class="player midfield1">8</div>
+        <div class="player midfield2">7</div>
+        <div class="player midfield3">6</div>
+        <div class="player midfield4">5</div>
+
+        <div class="player defense1">2</div>
+        <div class="player defense2">3</div>
+        <div class="player defense3">4</div>
+
+        <div class="player goalkeeper">1</div>
+    </div>
+
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+          font-family: Arial, sans-serif;
+          position: relative; 
+        }
+    
+        .container {
+          position: relative; 
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-gap: 20px;
+          max-width: 1200px;
+          margin: 20px auto;
+        }
+    
+        .field-image {
+          width: 100%; 
+          height: auto;
+          position: absolute; 
+          top: 0;
+          left: 0;
+        }
+    
+        .player {
+          position: absolute; 
+          background-color: #3498db;
+          color: #fff;
+          text-align: center;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .ja1 { top: 300px; left: 200px; }
+        .ja2 { top: 300px; left: 350px; }
+        .ja3 { top: 300px; left: 500px; }
+        .forward1 { top: 100px; left: 650px; }
+        .forward2 { top: 300px; left: 650px; }
+        .forward3 { top: 500px; left: 650px; }
+        .midfield1 { top: 50px; left: 800px; }
+        .midfield2 { top: 200px; left: 800px; }
+        .midfield3 { top: 400px; left: 800px; }
+        .midfield4 { top: 550px; left: 800px; }
+        .defense1 { top: 100px; left: 950px; }
+        .defense2 { top: 300px; left: 950px; }
+        .defense3 { top: 500px; left: 950px; }
+        .goalkeeper { top: 300px; left: 1100px; }
+      </style>
+</body>
+</html> 
