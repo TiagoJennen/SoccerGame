@@ -35,9 +35,11 @@ body{
     border: none;
 }
 
-.ja1 { top: 300px; left: 200px; }
-.ja2 { top: 300px; left: 350px; }
+.ja1 { top: 300px; left: 300px; }
+.ja2 { top: 300px; left: 400px; }
 .ja3 { top: 300px; left: 500px; }
+.ja4 { top: 300px; left: 200px; }
+.ja5 { top: 300px; left: 100px; }
 .forward1 { top: 100px; left: 650px; }
 .forward2 { top: 300px; left: 650px; }
 .forward3 { top: 500px; left: 650px; }
