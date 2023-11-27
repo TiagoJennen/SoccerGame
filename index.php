@@ -10,10 +10,19 @@
     <div class="container">
         <img src="voetballijnen.png" class="field-image">
         <?php
-        // Verbinding maken met de database
-        include('config.php');
+        $servername = 'localhost';
+        $username = 'jouw_gebruikersnaam';
+        $password = 'jouw_wachtwoord';
+        $database = 'soccergame';
 
-        // Functie om een willekeurige vraag op te halen op basis van het niveau
+        $conn = new mysqli($servername, $username, $password, $database);
+
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+
+        $conn->set_charset('utf8mb4');
+
         function getRandomQuestionByLevel($conn, $level) {
             $query = "SELECT * FROM `vragen` WHERE `Level` = $level ORDER BY RAND() LIMIT 1";
             $result = $conn->query($query);
@@ -25,30 +34,15 @@
             }
         }
 
-                // Loop door alle niveaus en toon een vraag voor elk niveau
-            for ($i = 1; $i <= 16; $i++) {
+        for ($i = 1; $i <= 16; $i++) {
             echo "Current level: $i <br>";
 
-            // Onderstaande regel toegevoegd voor debugging
             $conn->set_charset('utf8mb4');
 
             $question = getRandomQuestionByLevel($conn, $i);
-            var_dump($question); // Bekijk de inhoud van $question
-            // Je bestaande code om de vraag weer te geven
-}
-        // Loop door alle niveaus en toon een vraag voor elk niveau
-for ($i = 1; $i <= 16; $i++) {
-    echo "Current level: $i <br>";
+            var_dump($question); 
+        }
 
-    // Onderstaande regel toegevoegd voor debugging
-    $conn->set_charset('utf8mb4');
-
-    $question = getRandomQuestionByLevel($conn, $i);
-    var_dump($question); // Bekijk de inhoud van $question
-    // Je bestaande code om de vraag weer te geven
-}
-
-        // Sluit de databaseverbinding
         $conn->close();
         ?>
     </div>
