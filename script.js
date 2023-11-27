@@ -31,3 +31,15 @@ function showMultipleChoiceQuestion(title, text, options, correctIndex) {
 function closeQuestionModal() {
     document.getElementById('questionModal').style.display = 'none';
 }
+function showQuestionForLevel(level) {
+    // Maak een AJAX-verzoek om de vraag op te halen voor het opgegeven niveau
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            var question = JSON.parse(xhr.responseText);
+            showMultipleChoiceQuestion(question.title, question.text, question.options, question.correctIndex);
+        }
+    };
+    xhr.open("GET", "get_question.php?level=" + level, true);
+    xhr.send();
+}

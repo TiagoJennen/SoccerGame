@@ -4,6 +4,7 @@ body{
     padding: 0;
     font-family: Arial, sans-serif;
     position: relative; 
+
 }
 
 .container {
@@ -81,6 +82,10 @@ body{
     font-size: 20px;
     cursor: pointer;
 }
+#options {
+    text-align: center;
+}
+
 #options button {
     margin: 10px;
     padding: 10px;
@@ -89,4 +94,7 @@ body{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
 }

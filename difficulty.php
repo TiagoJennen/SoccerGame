@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Difficulty</title>
     <link rel="stylesheet" href="home.css">
     <link rel="icon" type="png" href="Footy facts.png">
 </head>
 <body>
-
     <section class="buttons">
-        <li><a href="difficulty.html">Start</a></li>
-        <li><a href="leaderboard.html">Leaderboard</a></li>
-        <li><a href="settings.html">Settings</a></li>
+        <li><a href="index.php?difficulty=easy">Easy</a></li>
+        <li><a href="index.php?difficulty=medium">Medium</a></li>
+        <li><a href="index.php?difficulty=hard">Hard</a></li>
     </section>
-
 </body>
 </html>
