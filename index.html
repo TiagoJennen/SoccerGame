@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./goalkeeper.js"></script>
+    
     <title>SoccerGame</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -28,7 +30,8 @@
         <button class="player defense2" data-level="3" data-current-level="1" onclick="showMultipleChoiceQuestion('Defender 2 (Level 3)', 'Which defender has the most appearances for Brazil?', ['Cafu', 'Lucio', 'Roberto Carlos', ' Thiago Silva'], 0)">3</button>
         <button class="player defense3" data-level="4" data-current-level="1" onclick="showMultipleChoiceQuestion('Defender 3 (Level 4)', 'Which defender made the most expensive transfer?', ['Harry Maguire', 'Virgil van Dijk', 'Josko Gvardiol', 'Matthijs de Ligt'], 2)">4</button>
 
-        <button class="player goalkeeper" data-level="1" data-current-level="1" onclick="showMultipleChoiceQuestion('Goalkeeper (Level 1)', 'With 202 clean sheets, which goalkeeper has the best record in the Premier League?', ['Joe Hart', 'Petr Cech', 'Peter Schmeichel', 'Hugo Lloris'], 1)">1</button>
+        <button class="player goalkeeper" data-level="1" data-current-level="1" onclick="showMultipleChoiceQuestion('ff (gg)', 'hh', ['ggg', 'ggg', 'ggg', 'ggg'], 2)">1</button>
+        <div id="questionContainer"></div>
     </div>
 
     <div id="questionModal" class="modal">

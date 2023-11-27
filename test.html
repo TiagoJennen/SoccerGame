@@ -1,0 +1,28 @@
+<!-- HTML-bestand: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoccerGame</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="icon" type="png" href="Footy facts.png">
+</head>
+<body>
+    <div class="container">
+        <img src="voetballijnen.png" class="field-image">
+        <button class="player ja5" data-level="16" data-current-level="1" onclick="showMultipleChoiceQuestion('Attack 5 (Level 16)', 'Which Colombian player scored 3 goals in the 2018 World Cup?', ['Radamel Falcao', 'James Rodriguez', 'Yerry Mina', 'Juan Cuadrado'], 2)">16</button>
+        <!-- ... Voeg hier de andere knoppen toe ... -->
+    </div>
+ 
+    <div id="questionModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeQuestionModal()">&times;</span>
+            <h2 id="questionTitle"></h2>
+            <p id="questionText"></p>
+            <div id="options"></div>
+        </div>
+    </div>
+    <script src="test.js"></script>
+</body>
+</html>
